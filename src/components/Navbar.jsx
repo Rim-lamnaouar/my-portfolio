@@ -10,24 +10,15 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/logo.png';
 import { Link } from 'react-scroll';
 
-// import moon from "../assets/night.png"
-// import sun from "../assets/sun.png"
-
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  // const [theme, settheme] = useState(false);
-
-  // console.log(theme)
-
-
   return (
-    // <div className={` ${theme?"bg-[#000]":"bg-[#fff]"} fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-500`}>
     <div className="bg-[#fff] fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-500">
       <div>
       <Link to="home">
-        <img src={Logo} alt='Logo Image' style={{width: '110px', cursor: 'pointer'}} />
+        <img src={Logo} alt='Logo' style={{width: '110px', cursor: 'pointer'}} />
       </Link>
       </div>
 
@@ -63,18 +54,7 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-
-        {/* {/* <li className='hover:text-pink-600 hover:border-pink-600'>
-          <Link to='contact' onClick={e=>settheme(!theme)} smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li> */}
       </ul>
-      {/* <div className="toggle">
-        <input type="checkbox" name="" id="checked" />
-        <img id="sun" src={sun} alt="" />
-        <img id="moon" src={moon} alt="" />
-      </div> */} 
 
       {/* Hamburger */}
       <div onClick={handleClick} className='md:hidden z-10'>
